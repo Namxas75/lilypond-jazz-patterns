@@ -1,9 +1,7 @@
-
-
-
+\version "2.22.2"
 \header {
-  title = "Untitled"
-  composer = "Composer"
+  title = "8 Tonic Patterns"
+  composer = "David Valdez"
 }
 
 #(define (naturalize-pitch p)
@@ -49,11 +47,6 @@ naturalizeMusic =
    (ly:music?)
    (naturalize m))
 
-
-
-
-
-
 majorTriad = \relative { \tuplet 3/2 { b 8 dis fis } }
 
 minorSecondApart = {
@@ -70,12 +63,7 @@ minorSecondApartCis = {
   \transpose c cis{
     \majorTriad
   }
-
-
 }
-
-
-
 
 triadPairsMinorSecond = {
   \transpose c c    { \minorSecondApart }
@@ -90,7 +78,6 @@ triadPairsMinorSecond = {
   \naturalizeMusic \transpose b c'    { \triadPairsMinorSecond } \break
   \naturalizeMusic \transpose b cis' { \triadPairsMinorSecond }
 }
-
 
 \layout{}
 \midi{}
