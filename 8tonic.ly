@@ -54,13 +54,18 @@ minorSecondApart = {
   \transpose c des{
     \majorTriad
   }
-
-
 }
 
-minorSecondApartCis = {
+majorSecondApart = {
   \majorTriad 
-  \transpose c cis{
+  \transpose c d{
+    \majorTriad
+  }
+}
+
+tritoneApart = {
+  \majorTriad 
+  \transpose c fis{
     \majorTriad
   }
 }
@@ -72,15 +77,37 @@ triadPairsMinorSecond = {
   \transpose c a    { \minorSecondApart }
 }
 
-\new Staff {
+triadPairsMajorSecond = {
+  \transpose c c    { \majorSecondApart }
+  \transpose c es   { \majorSecondApart }
+  \transpose c ges  { \majorSecondApart }
+  \transpose c a    { \majorSecondApart }
+}
 
+triadPairsTritone = {
+  \transpose c c    { \tritoneApart }
+  \transpose c es   { \tritoneApart }
+  \transpose c ges  { \tritoneApart }
+  \transpose c a    { \tritoneApart }
+}
+
+\new Staff {
   \naturalizeMusic \transpose b b    { \triadPairsMinorSecond } \break
-  \naturalizeMusic \transpose b c'    { \triadPairsMinorSecond } \break
-  \naturalizeMusic \transpose b cis' { \triadPairsMinorSecond }
+  \naturalizeMusic \transpose b b    { \triadPairsMajorSecond } \break
+  \naturalizeMusic \transpose b b    { \triadPairsTritone }     \break
+  }
+
+\new Staff {
+  \naturalizeMusic \transpose b c'   { \triadPairsMinorSecond } \break
+  \naturalizeMusic \transpose b c'   { \triadPairsMajorSecond } \break
+  \naturalizeMusic \transpose b c'    { \triadPairsTritone }     \break
+}
+
+\new Staff {
+  \naturalizeMusic \transpose b cis' { \triadPairsMinorSecond } \break
+  \naturalizeMusic \transpose b cis' { \triadPairsMajorSecond } \break
+  \naturalizeMusic \transpose b cis'    { \triadPairsTritone }     \break
 }
 
 \layout{}
 \midi{}
-
-
-
