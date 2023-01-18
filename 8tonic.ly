@@ -47,48 +47,48 @@ naturalizeMusic =
    (ly:music?)
    (naturalize m))
 
-majorTriad = \relative { \tuplet 3/2 { b 8 dis fis } }
+melodicFragment = \relative { \tuplet 3/2 { b 8 dis fis } }
 
-minorSecondApart = {
-  \majorTriad 
+pairMinorSecondApart = {
+  \melodicFragment 
   \transpose c des{
-    \majorTriad
+    \melodicFragment
   }
 }
 
-majorSecondApart = {
-  \majorTriad 
+pairMajorSecondApart = {
+  \melodicFragment 
   \transpose c d{
-    \majorTriad
+    \melodicFragment
   }
 }
 
-tritoneApart = {
-  \majorTriad 
+pairTritoneApart = {
+  \melodicFragment 
   \transpose c fis{
-    \majorTriad
+    \melodicFragment
   }
 }
 
-triadPairsMinorSecond = {
-  \transpose c c    { \minorSecondApart }
-  \transpose c es   { \minorSecondApart }
-  \transpose c ges  { \minorSecondApart }
-  \transpose c a    { \minorSecondApart }
+allPairsMinorSecondApart = {
+  \transpose c c    { \pairMinorSecondApart }
+  \transpose c es   { \pairMinorSecondApart }
+  \transpose c ges  { \pairMinorSecondApart }
+  \transpose c a    { \pairMinorSecondApart }
 }
 
-triadPairsMajorSecond = {
-  \transpose c cis    { \majorSecondApart }
-  \transpose c e  { \majorSecondApart }
-  \transpose c g  { \majorSecondApart }
-  \transpose c bes    { \majorSecondApart }
+allPairsMajorSecondApart = {
+  \transpose c cis    { \pairMajorSecondApart }
+  \transpose c e      { \pairMajorSecondApart }
+  \transpose c g      { \pairMajorSecondApart }
+  \transpose c bes    { \pairMajorSecondApart }
 }
 
-triadPairsTritone = {
-  \transpose c c    { \tritoneApart }
-  \transpose c d   { \tritoneApart }
-  \transpose c es  { \tritoneApart }
-  \transpose c f    { \tritoneApart }
+allPairsTritoneApart = {
+  \transpose b c    { \pairTritoneApart }
+  \transpose b d    { \pairTritoneApart }
+  \transpose b es   { \pairTritoneApart }
+  \transpose b f    { \pairTritoneApart }
 }
 
 bSetChordsMin = \chords {
@@ -113,29 +113,29 @@ cisSetChordsMin = \chords {
 <<
 \new ChordNames \bSetChordsMin 
 \new Staff {
-  \naturalizeMusic \transpose b b    { \triadPairsMinorSecond } \break
+  \naturalizeMusic \transpose b b    { \allPairsMinorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \bSetChordsMaj 
 \new Staff {
-  \naturalizeMusic \transpose b b    { \triadPairsMajorSecond } \break
+  \naturalizeMusic \transpose b b    { \allPairsMajorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \bSetChordsTrit 
 \new Staff {
-  \naturalizeMusic \transpose b c'    { \triadPairsTritone }     \break
+  \naturalizeMusic \transpose b b'    { \allPairsTritoneApart }     \break
 }
 >>
 
 <<
 \new Staff {
-  \naturalizeMusic \transpose b cis' { \triadPairsMinorSecond } \break
-  \naturalizeMusic \transpose b cis' { \triadPairsMajorSecond } \break
-  \naturalizeMusic \transpose b cis'    { \triadPairsTritone }     \break
+  \naturalizeMusic \transpose b cis' { \allPairsMinorSecondApart  } \break
+  \naturalizeMusic \transpose b cis' { \allPairsMajorSecondApart  } \break
+  \naturalizeMusic \transpose b cis' { \allPairsTritoneApart      } \break
 }
 >>
 
