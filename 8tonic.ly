@@ -8,26 +8,33 @@
 
 \include "scheme/naturalize.ly"
 
-melodicFragment = \relative { \tuplet 3/2 { b 8 dis fis } }
+patternA = \relative { \tuplet 3/2 { c 8 e g } }
+patternB = \relative { \tuplet 3/2 { g 8 e c } }
 
 pairMinorSecondApart = {
-  \melodicFragment 
-  \transpose c des{
-    \melodicFragment
+  \transpose c b{
+    \patternA
+  }
+  \transpose c c'{
+    \patternB
   }
 }
 
 pairMajorSecondApart = {
-  \melodicFragment 
-  \transpose c d{
-    \melodicFragment
+  \transpose c b{
+    \patternA
+  }
+  \transpose c cis'{
+    \patternB
   }
 }
 
 pairTritoneApart = {
-  \melodicFragment 
-  \transpose c fis{
-    \melodicFragment
+  \transpose c b{
+    \patternA
+  }
+  \transpose c eis'{
+    \patternB
   }
 }
 
@@ -53,15 +60,15 @@ allPairsTritoneApart = {
 }
 
 bSetChordsMin = \chords {
-  b2/c d2/es f2/fis as2/a
+  b2/c d2/es f2/ges as2/a
 }
 
 bSetChordsMaj = \chords {
-  c2/d es2/f fis2/gis a2/b
+  c2/d dis2/f fis2/gis a2/b
 }
 
 bSetChordsTrit = \chords {
-  c2/fis d2/as es2/a f2/a
+  c2/fis d2/gis es2/a f2/b
 }
 cSetChordsMin = \chords {
   c2/cis es2/e fis2/g a2/bes
