@@ -3,21 +3,24 @@
 <<
 \new ChordNames \bSetChordsMin 
 \new Staff {
-  \naturalizeMusic \transpose b b    { \allPairsMinorSecondApart } \break
+    \accidentalStyle neo-modern
+    \naturalizeMusic \transpose b b    { \allPairsMinorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \bSetChordsMaj 
 \new Staff {
-  \naturalizeMusic \transpose b b    { \allPairsMajorSecondApart } \break
+    \accidentalStyle neo-modern
+    \naturalizeMusic \transpose b b    { \allPairsMajorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \bSetChordsTrit 
 \new Staff {
-  \naturalizeMusic \transpose b b'    { \allPairsTritoneApart }     \break
+    \accidentalStyle neo-modern
+    \naturalizeMusic \transpose b b'    { \allPairsTritoneApart }     \break
 }
 >>
 
@@ -26,21 +29,24 @@
 <<
 \new ChordNames \cSetChordsMin 
 \new Staff {
-  \naturalizeMusic \transpose b c'   { \allPairsMinorSecondApart } \break
+    \accidentalStyle neo-modern
+    \naturalizeMusic \transpose b c'   { \allPairsMinorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \cSetChordsMaj 
 \new Staff {
-  \naturalizeMusic \transpose b c'    { \allPairsMajorSecondApart } \break
+    \accidentalStyle neo-modern
+    \naturalizeMusic \transpose b c'    { \allPairsMajorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \cSetChordsTrit 
 \new Staff {
-  \naturalizeMusic \transpose b c''    { \allPairsTritoneApart }     \break
+    \accidentalStyle neo-modern
+    \naturalizeMusic \transpose b c''    { \allPairsTritoneApart }     \break
 }
 >>
 
@@ -49,20 +55,23 @@
 <<
 \new ChordNames \cisSetChordsMin 
 \new Staff {
-  \naturalizeMusic \transpose b cis'    { \allPairsMinorSecondApart } \break
-}
+    \accidentalStyle neo-modern
+    \naturalizeMusic \transpose b cis'    { \allPairsMinorSecondApart } \break
+}   
 >>
 
 <<
 \new ChordNames \cisSetChordsMaj 
 \new Staff {
-  \naturalizeMusic \transpose b cis'    { \allPairsMajorSecondApart } \break
+    \accidentalStyle neo-modern
+    \naturalizeMusic \transpose b cis'    { \allPairsMajorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \cisSetChordsTrit 
 \new Staff {
-  \naturalizeMusic \transpose b cis''    { \allPairsTritoneApart }     \break
+    \accidentalStyle neo-modern
+    \naturalizeMusic \transpose b cis''    { \allPairsTritoneApart }     \break
 }
 >>
