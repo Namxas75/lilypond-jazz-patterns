@@ -70,42 +70,29 @@ bSetChordsMaj = \chords {
 bSetChordsTrit = \chords {
   c2/fis d2/gis es2/a f2/b
 }
+
 cSetChordsMin = \chords {
   c2/cis es2/e fis2/g a2/bes
+}
+cSetChordsMaj = \chords {
+  cis2/dis e2/fis g2/a bes2/c
+}
+cSetChordsTrit = \chords {
+  cis2/g dis2/a e2/bes fis2/c
 }
 
 cisSetChordsMin = \chords {
   cis2/d e2/f g2/as bes2/b
 }
-
-<<
-\new ChordNames \bSetChordsMin 
-\new Staff {
-  \naturalizeMusic \transpose b b    { \allPairsMinorSecondApart } \break
+cisSetChordsMaj = \chords {
+  d2/e f2/g as2/bes b2/des
 }
->>
-
-<<
-\new ChordNames \bSetChordsMaj 
-\new Staff {
-  \naturalizeMusic \transpose b b    { \allPairsMajorSecondApart } \break
+cisSetChordsTrit = \chords {
+  d2/as e2/bes f2/b g2/des
 }
->>
 
-<<
-\new ChordNames \bSetChordsTrit 
-\new Staff {
-  \naturalizeMusic \transpose b b'    { \allPairsTritoneApart }     \break
-}
->>
+\include "output_to_staffs.ly"
 
-% <<
-% \new Staff {
-%   \naturalizeMusic \transpose b c' { \allPairsMinorSecondApart  } \break
-%   \naturalizeMusic \transpose b c' { \allPairsMajorSecondApart  } \break
-%   \naturalizeMusic \transpose b c' { \allPairsTritoneApart      } \break
-% }
-% >>
 
 \layout{}
 \midi{}
