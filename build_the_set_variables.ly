@@ -26,9 +26,9 @@ pairTritoneApart = {
 }
 
 allPairsMinorSecondApart = {
-  \transpose c c    { \pairMinorSecondApart }
+  \transpose c c    { \pairMinorSecondApart } \breathe
   \transpose c es   { \pairMinorSecondApart }
-  \transpose c ges  { \pairMinorSecondApart }
+  \transpose c ges  { \pairMinorSecondApart } \breathe
   \transpose c a    { \pairMinorSecondApart }
 }
 

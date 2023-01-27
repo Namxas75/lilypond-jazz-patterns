@@ -1,5 +1,3 @@
-
-
 \version "2.22.2"
 \header {
   title = "8 Tonic Patterns"
