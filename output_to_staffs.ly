@@ -3,27 +3,24 @@
 <<
 \new ChordNames \bSetChordsMin 
 \new Staff {
-    \accidentalStyle neo-modern
-    \hide Stem
-    \naturalizeMusic \transpose b b    { \allPairsMinorSecondApart } \break
+    \include "style_staff.ly"
+    \transpose b b    { \allPairsMinorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \bSetChordsMaj 
 \new Staff {
-    \accidentalStyle neo-modern
-    \hide Stem
-    \naturalizeMusic \transpose b b    { \allPairsMajorSecondApart } \break
+    \include "style_staff.ly"
+    \transpose b b    { \allPairsMajorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \bSetChordsTrit 
 \new Staff {
-    \accidentalStyle neo-modern
-    \hide Stem
-    \naturalizeMusic \transpose b b'    { \allPairsTritoneApart }     \break
+    \include "style_staff.ly"
+    \transpose b b'    { \allPairsTritoneApart }     \break
 }
 >>
 
@@ -32,27 +29,24 @@
 <<
 \new ChordNames \cSetChordsMin 
 \new Staff {
-    \accidentalStyle neo-modern
-    \hide Stem
-    \naturalizeMusic \transpose b c'   { \allPairsMinorSecondApart } \break
+    \include "style_staff.ly"
+    \transpose b c'   { \allPairsMinorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \cSetChordsMaj 
 \new Staff {
-    \accidentalStyle neo-modern
-    \hide Stem
-    \naturalizeMusic \transpose b c'    { \allPairsMajorSecondApart } \break
+    \include "style_staff.ly"
+    \transpose b c'    { \allPairsMajorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \cSetChordsTrit 
 \new Staff {
-    \accidentalStyle neo-modern
-    \hide Stem
-    \naturalizeMusic \transpose b c''    { \allPairsTritoneApart }     \break
+    \include "style_staff.ly"
+    \transpose b c''    { \allPairsTritoneApart }     \break
 }
 >>
 
@@ -61,26 +55,23 @@
 <<
 \new ChordNames \cisSetChordsMin 
 \new Staff {
-    \accidentalStyle neo-modern
-    \hide Stem
-    \naturalizeMusic \transpose b cis'    { \allPairsMinorSecondApart } \break
+    \include "style_staff.ly"
+    \transpose b cis'    { \allPairsMinorSecondApart } \break
 }   
 >>
 
 <<
 \new ChordNames \cisSetChordsMaj 
 \new Staff {
-    \accidentalStyle neo-modern
-    \hide Stem
-    \naturalizeMusic \transpose b cis'    { \allPairsMajorSecondApart } \break
+    \include "style_staff.ly"
+    \transpose b cis'    { \allPairsMajorSecondApart } \break
 }
 >>
 
 <<
 \new ChordNames \cisSetChordsTrit 
 \new Staff {
-    \accidentalStyle neo-modern
-    \hide Stem
-    \naturalizeMusic \transpose b cis''    { \allPairsTritoneApart }     \break
+    \include "style_staff.ly"
+    \transpose b cis''    { \allPairsTritoneApart }     \break
 }
 >>

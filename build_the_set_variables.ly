@@ -21,29 +21,29 @@ pairTritoneApart = {
     \patternA
   }
   \transpose c eis'{
-    \patternB
+    \patternA
   }
 }
 
 allPairsMinorSecondApart = {
-  \transpose c c    { \pairMinorSecondApart } \breathe
-  \transpose c es   { \pairMinorSecondApart }
-  \transpose c ges  { \pairMinorSecondApart } \breathe
-  \transpose c a    { \pairMinorSecondApart }
+  \transpose c c    { \pairMinorSecondApart } \bar "'"
+  \transpose c es   { \pairMinorSecondApart } \bar "'"
+  \transpose c ges  { \pairMinorSecondApart } \bar "'"
+  \transpose c a    { \pairMinorSecondApart } \bar "'"
 }
 
 allPairsMajorSecondApart = {
-  \transpose c cis    { \pairMajorSecondApart }
-  \transpose c e      { \pairMajorSecondApart }
-  \transpose c g      { \pairMajorSecondApart }
-  \transpose c bes    { \pairMajorSecondApart }
+  \transpose c cis    { \pairMajorSecondApart } \bar "'"
+  \transpose c e      { \pairMajorSecondApart } \bar "'"
+  \transpose c g      { \pairMajorSecondApart } \bar "'"
+  \transpose c bes    { \pairMajorSecondApart } \bar "'"
 }
 
 allPairsTritoneApart = {
-  \transpose b c    { \pairTritoneApart }
-  \transpose b d    { \pairTritoneApart }
-  \transpose b es   { \pairTritoneApart }
-  \transpose b f    { \pairTritoneApart }
+  \transpose b c    { \pairTritoneApart } \bar "'"
+  \transpose b d    { \pairTritoneApart } \bar "'"
+  \transpose b es   { \pairTritoneApart } \bar "'"
+  \transpose b f    { \pairTritoneApart } \bar "'"
 }
 
 bSetChordsMin = \chords {
