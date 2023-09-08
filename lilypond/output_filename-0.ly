@@ -1,3 +1,4 @@
+% template.erb
 \header {
   \version "2.24.2"
   title = "8 Tonic Patterns"

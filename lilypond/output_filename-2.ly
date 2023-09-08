@@ -1,3 +1,4 @@
+% template.erb
 \header {
   \version "2.24.2"
   title = "8 Tonic Patterns"
@@ -6,7 +7,7 @@
 
 \include "scheme/naturalize.ly"
 
-pattern = \relative { b 8 dis fis 4 g 8 e c 4 }
+pattern = \relative { c' 8 d e g a 2 b 8 a fis e d 2 }
 \include "create_notated_line.ly"
 
 pattern = \transpose b c' \pattern
