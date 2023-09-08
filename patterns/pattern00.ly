@@ -1,1 +1,0 @@
-pattern = \relative { b 8 dis fis 4 g 8 e c 4 }
