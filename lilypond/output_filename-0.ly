@@ -7,7 +7,7 @@
 
 \include "scheme/naturalize.ly"
 
-pattern = \relative { b 8 dis fis 4 g 8 e c 4 }
+pattern = \relative { c' 16 d es e f e es d c 2 }
 \include "create_notated_line.ly"
 
 pattern = \transpose b c' \pattern

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ruby generate.rb
+
 # Define the source and destination directories
 source_directory="lilypond/"
 destination_directory="pdf/"
