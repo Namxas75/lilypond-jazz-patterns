@@ -1,13 +1,15 @@
 % template.erb
 \header {
   \version "2.24.2"
-  title = "8 Tonic Patterns"
-  composer = "Troels Busk-Jepsen - based on the ideas of David Valdez"
+  title = "8 Tonic Patterns - page 1"
+
+  subtitle = "Based on a concept by David Valdez"
+  composer = "Troels Busk-Jepsen"
 }
 
 \include "scheme/naturalize.ly"
 
-pattern = \relative { c' 16 d es e f e es d c 2 }
+pattern = \relative { b 8 dis fis 4 g 8 e c 4 }
 \include "create_notated_line.ly"
 
 pattern = \transpose b c' \pattern
