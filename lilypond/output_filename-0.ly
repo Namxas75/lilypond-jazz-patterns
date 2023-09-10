@@ -10,13 +10,28 @@
 \include "scheme/naturalize.ly"
 
 pattern = \relative { b 8 dis fis 4 g 8 e c 4 }
-\include "create_notated_line.ly"
+\include "transpose_in_minor_thirds.ly"
+\include "staff.ly"
+
+descending_pattern = \relative { g 8 e c 4 b 8 dis fis 4 }
+\include "transpose_down_in_minor_thirds.ly"
+\include "staff.ly"
 
 pattern = \transpose b c' \pattern
-\include "create_notated_line.ly"
+\include "transpose_in_minor_thirds.ly"
+\include "staff.ly"
+
+descending_pattern = \transpose b c' \descending_pattern
+\include "transpose_down_in_minor_thirds.ly"
+\include "staff.ly"
 
 pattern = \transpose c des \pattern
-\include "create_notated_line.ly"
+\include "transpose_in_minor_thirds.ly"
+\include "staff.ly"
+
+descending_pattern = \relative c des' \descending_pattern
+\include "transpose_down_in_minor_thirds.ly"
+\include "staff.ly"
 
 \layout {
 }
