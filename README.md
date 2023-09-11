@@ -8,5 +8,6 @@
 ## Run the project
 
 - ```brew install lilypond```
+- ```brew install pdftk-java```
 - ```chmod +x build.sh```
 - ```./build.sh``` to build the generate the pdf files
