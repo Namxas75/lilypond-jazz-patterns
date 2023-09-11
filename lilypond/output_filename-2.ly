@@ -13,7 +13,7 @@ pattern = \relative { b 8 dis fis 4 g 8 c e 4 }
 \include "transpose_in_minor_thirds.ly"
 \include "staff.ly"
 
-descending_pattern = \relative { b, 8 dis fis 4 g 8 c e 4 }
+descending_pattern = \relative { e' 8 c g 4 fis 8 dis b 4 }
 \include "transpose_down_in_minor_thirds.ly"
 \include "staff.ly"
 
