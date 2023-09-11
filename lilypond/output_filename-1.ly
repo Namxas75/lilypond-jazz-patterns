@@ -1,7 +1,7 @@
 % template.erb
 \header {
   \version "2.24.2"
-  title = "8 Tonic Patterns - page 1"
+  title = "8 Tonic Patterns - page 2"
 
   subtitle = "Based on a concept by David Valdez"
   composer = "Troels Busk-Jepsen"
@@ -9,11 +9,11 @@
 
 \include "scheme/naturalize.ly"
 
-pattern = \relative { b 8 dis fis 4 g 8 e c 4 }
+pattern = \relative { b 8 dis fis 4 as 8 f des 4 }
 \include "transpose_in_minor_thirds.ly"
 \include "staff.ly"
 
-descending_pattern = \relative { g 8 e c 4 b 8 dis fis 4 }
+descending_pattern = \relative { as 8 f des 4 b 8 dis fis 4 }
 \include "transpose_down_in_minor_thirds.ly"
 \include "staff.ly"
 
