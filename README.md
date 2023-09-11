@@ -7,6 +7,6 @@
 
 ## Run the project
 
-- brew install lilypond
-- chmod +x build.sh
-- ./build.sh to build the generate the pdf files
+- ```brew install lilypond```
+- ```chmod +x build.sh``````
+- ```./build.sh`````` to build the generate the pdf files
