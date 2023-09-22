@@ -4,3 +4,5 @@ compoundLine = {
   \transpose c ges  { \pattern }
   \transpose c a    { \pattern }
 }
+
+\include "staff.ly"

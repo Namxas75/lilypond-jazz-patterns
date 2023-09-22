@@ -1,4 +1,4 @@
 8tonic.pdf
 pdf/*.pdf
-lilypond/
+lilypond/*.ly
 pdf/
