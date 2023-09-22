@@ -26,7 +26,8 @@ music_pieces = [
     { notes: "b 8 dis fis 4 f 8 a c 4 d 8 b g 4 as 8 f des 4",  descending: "des 8 f as 4 g 8 b d 4 c 8 a f 4 fis 8 dis b 4"},
     { notes: "c' 8 es g bes a g f e",                           descending: "es 8 ges as g ges f es des"},
     { notes: "c' 16 d es e f e es d c 2",                       descending: "c 16 d es e f e es d c 2"},
-    { notes: "d' 8 es f e es 2",                                descending: "d' 8 es f e es 2"}
+    { notes: "d' 8 es f e es 2",                                descending: "d' 8 es f e es 2"},
+    { notes: "c' 8 bes c es f fis g 4 d 8 c d f g as a 4",        descending: "d 8 c d f g as a 4 c, 8 bes c e f fis g 4"},
 ]
 
 # Loop over objects and generate LilyPond files
