@@ -41,7 +41,7 @@ music_pieces.each_with_index do |piece, index|
   descending = piece[:descending]
 
   lilypond_code = erb_template.result(binding)
-  filename = "lilypond/output_filename-#{index}.ly"  # Create a unique filename
+  filename = "lilypond/document-#{index}.ly"  # Create a unique filename
   File.open(filename, 'w') { |file| file.write(lilypond_code) }
   puts "Generated #{filename}"
 end

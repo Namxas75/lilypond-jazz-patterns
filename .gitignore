@@ -2,3 +2,6 @@
 pdf/*.pdf
 lilypond/*.ly
 pdf/
+.pdf
+output_filename
+document-
